@@ -1,6 +1,5 @@
 from database.db import get_connection
 from .entities.Usuario import Usuario
-
 class UsuarioModel():
     
     @classmethod
@@ -32,5 +31,26 @@ class UsuarioModel():
                 result = cursor.fetchone()
             connection.close()
             return result[0]
+        except Exception as ex:
+            raise Exception(ex)
+    @classmethod
+    def register(self,usuario,perfil):
+        try:
+            connection = get_connection()
+            
+            with connection.cursor() as cursor:
+            # Corregir la forma de acceder a los atributos
+                cursor.execute('SELECT Register(%s, %s, %s, %s, %s)', 
+                           (usuario.usuario, usuario.contrasena, usuario.correo, perfil.nombre, perfil.apellido))
+                result = cursor.fetchone()
+            
+            connection.commit()
+            connection.close()
+            if result:
+                return result[0]
+            else:
+                return None  # Si no hay resultados, retornar None o un valor adecuado
+        
+        
         except Exception as ex:
             raise Exception(ex)
