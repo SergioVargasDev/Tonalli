@@ -6,7 +6,7 @@ Tonalli is an iOS app created during HackMTY 2024 that enables real-time text an
 ## Purpose:
 Tonalli bridges communication gaps, fostering meaningful connections and preserving endangered languages through accurate, real-time translations.
 
-## Key Features:
+## Technology Stack:
 * **Swift-based iOS App:** An intuitive iOS app developed using Swift, enabling users to input text or voice commands for seamless translations.
 * **Voice Integration with Google Cloud APIs:** Integrated Speech-to-Text and Text-to-Speech APIs from Google Cloud for accurate real-time voice translations.
 * **Machine Learning-powered Translations:** Leveraged TensorFlow to create and train translation models for culturally relevant and precise translations.
@@ -14,17 +14,10 @@ Tonalli bridges communication gaps, fostering meaningful connections and preserv
 * **Backend with Flask:** Designed a robust backend with Flask to handle user requests and manage data flow.
 * **ETL Workflows:** Collected and cleaned over 15,000 linguistic records to ensure high-quality and reliable translations.
 
-Technology Stack:
-Mobile Development: Swift
-Machine Learning: TensorFlow
-Cloud Services: Google Cloud APIs (Speech-to-Text, Text-to-Speech)
-Database: PostgreSQL
-Backend: Flask
+## Contribution:
 
-Contribution:
-
-To Cultural Preservation:
+### To Cultural Preservation:
 Tonalli fosters cultural understanding by making indigenous languages accessible to a wider audience, promoting meaningful interactions and preserving endangered languages.
 
-To Tourists & Indigenous Communities:
+### To Tourists & Indigenous Communities:
 The app enables real-time communication, empowering cultural exchange between tourists and indigenous speakers. With machine learning and an intuitive interface, Tonalli redefines language translation.
