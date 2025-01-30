@@ -44,5 +44,5 @@ The app enables real-time communication, empowering cultural exchange between to
 
 ### Home
 <div> 
-  <img src = "images/home.jpg" width = "300" height = "800">
+  <img src = "images/home.jpg" width = "425" height = "425">
 </div>
