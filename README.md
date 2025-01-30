@@ -46,3 +46,8 @@ The app enables real-time communication, empowering cultural exchange between to
 <div align = "center"> 
   <img src = "images/home.jpg" width = "250" height = "400">
 </div>
+
+<div align = "center"> 
+  <img src = "signUp/home.jpg" width = "250" height = "400">
+</div>
+
