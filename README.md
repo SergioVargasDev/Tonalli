@@ -54,7 +54,7 @@ The app enables real-time communication, empowering cultural exchange between to
 
 ### Translator/Past Translations
 
-<img src= "images/translator.jpg" align = "center" width = "250" height = "400"> <img src= "images/translator2.jpg" align = "center" width = "250" height = "400"> <img src= "images/pastTranslations.jpg" align = "center" width = "250" height = "400"> 
+<img src= "images/translator.jpg" align = "left" width = "250" height = "400"> <img src= "images/translator2.jpg" align = "right" width = "250" height = "400"> 
 
 ### Profile Data
 <div align = "center"> 
