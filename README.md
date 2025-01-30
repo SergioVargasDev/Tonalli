@@ -39,3 +39,10 @@ Tonalli fosters cultural understanding by making indigenous languages accessible
 
 ### To Tourists & Indigenous Communities:
 The app enables real-time communication, empowering cultural exchange between tourists and indigenous speakers. With machine learning and an intuitive interface, Tonalli redefines language translation.
+
+## Tonalli Demo
+
+### Home
+<div> 
+  <img src = "images/home.jpg" width="425" height="260">
+</div>
