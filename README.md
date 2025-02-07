@@ -30,7 +30,7 @@ Tonalli bridges communication gaps, fostering meaningful connections and preserv
 * Flask: Handled user requests, data flow, and translation processing.
 
 ### Data Processing:
-* ETL Workflows: Collected, cleaned, and structured 15,000+ linguistic records via web scraping and APIs to ensure high-quality and reliable translations.
+* ETL Workflows: Collected, cleaned, and structured 15,000+ linguistic records.
 
 ## Contribution:
 
