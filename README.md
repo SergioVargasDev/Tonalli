@@ -19,7 +19,6 @@ Tonalli is an iOS translation application developed during HackMTY 2024 that bri
 
 ### Machine Learning & AI
 - **GPT-4 LLM** – Advanced language model for regional dialect translation and cultural context preservation.
-- **TensorFlow** – Custom translation models trained for enhanced accuracy and cultural relevance.
 
 ### Cloud Services
 - **Google Cloud Speech APIs** – Real-time Speech-to-Text and Text-to-Speech functionality.
@@ -27,7 +26,7 @@ Tonalli is an iOS translation application developed during HackMTY 2024 that bri
 
 ### Backend & Database
 - **Flask** – Python backend handling user requests, data flow, and translation processing.
-- **PostgreSQL** – Robust database for session storage, user feedback, and translation history.
+- **MongoDB** – Flexible NoSQL database for session storage, user feedback, and translation history.
 
 ### Data Processing
 - **Python** – Web scraping and processing of 4,500+ indigenous language samples.
@@ -40,7 +39,7 @@ Tonalli is an iOS translation application developed during HackMTY 2024 that bri
 - **Xcode 14.0+** - Required for iOS development
 - **iOS 15.0+** - Minimum supported iOS version
 - **Python 3.8+** - For backend services and data processing
-- **PostgreSQL 12+** - Database management
+- **MongoDB 4.4+** - Database management
 - **Google Cloud Account** - For Speech APIs and Maps integration
 
 ### Quick Start
@@ -63,16 +62,23 @@ Tonalli is an iOS translation application developed during HackMTY 2024 that bri
    tonalli-env\Scripts\activate
    
    # Install dependencies
-   pip install flask tensorflow google-cloud-speech psycopg2-binary requests beautifulsoup4
+   pip install flask google-cloud-speech pymongo requests beautifulsoup4
    ```
 
 3. **Database Configuration**
    ```bash
-   # Install PostgreSQL and create database
-   createdb tonalli_db
+   # Install MongoDB and start the service
+   # On macOS with Homebrew:
+   brew tap mongodb/brew
+   brew install mongodb-community
+   brew services start mongodb-community
    
-   # Run database migrations
-   python manage.py db upgrade
+   # On Ubuntu:
+   # sudo apt-get install mongodb
+   # sudo systemctl start mongodb
+   
+   # Create database and collections
+   python setup_db.py
    ```
 
 4. **Environment Configuration**
@@ -83,7 +89,7 @@ Tonalli is an iOS translation application developed during HackMTY 2024 that bri
    # Add your API keys:
    # GOOGLE_CLOUD_API_KEY=your_key_here
    # OPENAI_API_KEY=your_gpt4_key_here
-   # DATABASE_URL=postgresql://user:password@localhost/tonalli_db
+   # MONGODB_URI=mongodb://localhost:27017/tonalli_db
    ```
 
 5. **Start Backend Server**
@@ -209,5 +215,3 @@ We welcome contributions from developers, linguists, and indigenous language spe
 **Performance Optimization:**
 
 - Cache frequently used translations locally
-- Implement background processing for non-critical operations
-- Optimize API calls to reduce latency and costs      
