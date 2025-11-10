@@ -26,7 +26,7 @@ Tonalli is an iOS translation application developed during HackMTY 2024 that bri
 
 ### Backend & Database
 - **Flask** – Python backend handling user requests, data flow, and translation processing.
-- **MongoDB** – Flexible NoSQL database for session storage, user feedback, and translation history.
+- **PostgreSQL** – SQL database for session storage, user feedback, and translation history.
 
 ### Data Processing
 - **Python** – Web scraping and processing of 4,500+ indigenous language samples.
